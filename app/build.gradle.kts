@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     alias(libs.plugins.jvm)
     alias(libs.plugins.javafx)
-    id("org.javamodularity.moduleplugin") version ("1.8.12")
+    alias(libs.plugins.javamodularity)
     application
 }
 
