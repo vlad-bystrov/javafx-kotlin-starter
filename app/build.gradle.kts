@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
     alias(libs.plugins.jvm)
     alias(libs.plugins.javafx)
@@ -15,6 +13,8 @@ dependencies {
 }
 
 java {
+    modularity.inferModulePath.set(false)
+
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
     }
