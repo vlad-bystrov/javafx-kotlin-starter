@@ -10,6 +10,10 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.bundles.ktor)
+    implementation(libs.tornadofx)
+    implementation(libs.coroutines.javafx)
+    implementation(libs.logback)
 }
 
 java {
